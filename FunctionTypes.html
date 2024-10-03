@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Types of Functions</title>
+</head>
+<body>
+    <h1>Named Functions...</h1>
+    <h1>Anonymous Functions...</h1>
+    <h1>Immediatly Invoked Function Expression....</h1>
+    <h1>Arrow Functions..</h1>
+<script>
+    //Named Funtions here Function name Sum() is specified... 
+    function Sum(num1,num2){
+        var res=num1+num2;
+        return res;
+    }
+    console.log(Sum(20,40));
+    //Anonymous Function here funtion name is not specified...
+    var Product=function(num1,num2){
+        let result=num1*num2
+        return result;
+    }
+    console.log(Product(20,40))
+    //Immediatly Invoked Function Expression....
+   var Product= (function(num1,num2){
+        var pro=num1*num2;
+        return pro;
+    })(10,10);
+console.log(Product);
+//Arrow Functions..
+var Product=(num1,num2)=>{
+    let result = num1 * num2;
+    return result;
+}
+console.log(Product(2,3));
+//Arrow Function with Different Parameters
+var Product=(num1,num2)=>num1 * num2;
+console.log(Product(5,4));
+//Arrow Function with single parameter...
+var Product=(num1)=>num1 * num1 * num1
+console.log(Product(5));
+//Arrow Function with no parameters
+var greet=()=>console.log("Hello Good Morning...");
+ console.log(greet());
+ var wish=_=>console.log("Many more Happy returns of the day...");
+ console.log(wish());
+</script>
+
+    
+</body>
+</html>
