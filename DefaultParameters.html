@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Parameters</title>
+</head>
+<body>
+    <h1>Programs to Understand about Default Parameters</h1>
+    <script>
+        // Function with parameters
+        function Fun(num1 , num2){
+            let res=num1 * num2;
+            return res;
+        }
+        console.log(Fun(2,3));//6
+        /*-----------------------------------------------------*/
+        //Function with Single Default Patrameter....
+        function Default1(num1,num2=8){//here the num2=8 is given.If we wont give arguments then function
+            //take num2=8 else it will take argument
+            let res=num1*num2;
+            return res;
+        }
+        console.log(Default1(2))//num2 value is not given..
+        /*-----------------------------------------------------*/
+        //Function with multiple Default parameters..
+        function Default(num1=20,num2=30){
+            let res=num1*num2;
+            return res;
+
+        }
+        console.log(Default());//600
+</script>
+</body>
+</html>
